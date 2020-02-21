@@ -17,14 +17,10 @@ The application should store books , and each book item contains the following f
 * `done` (boolean) - true if reading was completed, false otherwise
 * `attachmentUrl` (string) (optional) - a URL pointing to an image attached to a book item
 
-# Frontend
-
-The `client` folder contains a web application that can use the API that should be developed in the project.
 
 ## Logging
 
-The  code comes with a configured [Winston](https://github.com/winstonjs/winston) logger that creates [JSON formatted](https://stackify.com/what-is-structured-logging-and-why-developers-need-it/) log statements. You can use it to write log messages like this:
-
+The  code comes with a configured [Winston](https://github.com/winstonjs/winston) logger that creates [JSON formatted](https://stackify.com/what-is-structured-logging-and-why-developers-need-it/) log statements. 
 ```ts
 import { createLogger } from '../../utils/logger'
 const logger = createLogger('auth')
@@ -51,7 +47,7 @@ sls deploy -v
 
 ## Frontend
 
-To run a client application first edit the `client/src/config.ts` file to set correct parameters. And then run the following commands:
+To run a client application run the following commands:
 
 ```
 cd client
